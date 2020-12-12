@@ -50,6 +50,7 @@ const internQuestion = [{
     name: 'school'
 }]
 
+/* ----- RUN PROGRAM ----- */
 addMemberPrompt();
 
 function addMemberPrompt() {
@@ -61,10 +62,14 @@ function addMemberPrompt() {
         .then((response) => {
             if (response.addTeamMember) makeNewEmployee();
             else {
-                fs.writeFile('team.html', render(employees), (err) => {
+                fs.appendFile(outputPath, render(employees), (err) => {
+                    if (err) throw err;
+                    console.log('The "data to append" was appended to file!');
+                  });
+                /* fs.writeFile('team.html', render(employees), (err) => {
                     if (err) throw err;
                     console.log('The file has been created!');
-                  });
+                  }); */
             }
         });
 }
@@ -76,10 +81,7 @@ function makeNewEmployee() {
             choices: ['Manager', 'Engineer', 'Intern'],
             name: 'employeeType'
         }])
-        .then((response) => {
-            getEmployeeInfo(response.employeeType);
-        });
-
+        .then((response) => getEmployeeInfo(response.employeeType));
 }
 
 function getEmployeeInfo(employeeType) {
