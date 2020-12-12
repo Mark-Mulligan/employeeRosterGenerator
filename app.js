@@ -61,11 +61,11 @@ function addMemberPrompt() {
         .then((response) => {
             if (response.addTeamMember) makeNewEmployee();
             else {
-                fs.writeFile('myTeam.html', render(employees), (err) => {
+                console.log(employees);
+                fs.writeFile('team.html', render(employees), (err) => {
                     if (err) throw err;
                     console.log('The file has been created!');
                   });
-                //console.log(render(employees));
             }
         });
 }
@@ -105,10 +105,6 @@ function getEmployeeInfo(employeeType) {
                 });
         }
     })
-}
-
-function getEmployees() {
-    return employees;
 }
 
 // Write code to use inquirer to gather information about the development team members,
