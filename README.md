@@ -64,7 +64,7 @@ Example Readme generated using this project:
 Tests for this project are included in the test folder.  These tests are desigened to make sure all the classes are working properly.  
 
 * To run the tests, make sure jest is installed using npm.
-* Run npm run test
+* In the command line, run 'npm run test'.
 ```bash
 node npm run test
 ```
