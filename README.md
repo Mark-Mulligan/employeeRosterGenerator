@@ -50,7 +50,7 @@ node app.js
 ![Project Screenshot](./images/employeeGeneratorTop.png)
 
 ## Walkthrough 
-[Video Demo](https://www.youtube.com/watch?v=j_06LvDGsUg&feature=youtu.be)
+[Video Demo](https://youtu.be/Q8pTRk2yF5w)
 
 Example team.html generated using this project:
 [click here](./output/team.html)
