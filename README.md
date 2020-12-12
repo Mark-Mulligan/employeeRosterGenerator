@@ -47,11 +47,11 @@ After installing the project and all the required npm packages, run the project 
 ```bash
 node app.js
 ```
-Answer all the questions that are prompted to you in the command line.  
-After all the questions have been answered, a team.html file will be generated in the output folder.
-Also included in the output folder is an assets folder that contains all the css and images that go along with the generated html page.
+1.  Answer all the questions that are prompted to you in the command line.  
+2.  After all the questions have been answered, a team.html file will be generated in the output folder.
+3.  Also included in the output folder is an assets folder that contains all the css and images that go along with the generated html page.
 
-![Project Screenshot](./images/officeBackground.jpg)
+![Project Screenshot](./images/employeeGeneratorTop.png)
 
 ## Walkthrough 
 [Video Demo](https://www.youtube.com/watch?v=j_06LvDGsUg&feature=youtu.be)
