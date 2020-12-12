@@ -100,7 +100,7 @@ function getEmployeeInfo(employeeType) {
         } else {
             inquirer.prompt(internQuestion)
                 .then((data) => {
-                    employees.push(new Intern(res.name, res.id, res.email, data.githubUsername));
+                    employees.push(new Intern(res.name, res.id, res.email, data.school));
                     addMemberPrompt();     
                 });
         }
