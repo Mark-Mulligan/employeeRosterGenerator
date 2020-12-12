@@ -61,7 +61,6 @@ function addMemberPrompt() {
         .then((response) => {
             if (response.addTeamMember) makeNewEmployee();
             else {
-                console.log(employees);
                 fs.writeFile('team.html', render(employees), (err) => {
                     if (err) throw err;
                     console.log('The file has been created!');
