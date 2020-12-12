@@ -10,6 +10,7 @@ This project was built using node.js and includes the npm package inquirer to al
 * [Installation](#installation)
 * [Usage](#usage)
 * [Walkthrough](#walkthrough)
+* [Tests](#tests)
 * [License](#license)
 * [Questions](#questions)
   
@@ -59,8 +60,14 @@ node app.js
 Example Readme generated using this project:
 [click here](./output/team.html)
 
-## Test
+## Tests
+Tests for this project are included in the test folder.  These tests are desigened to make sure all the classes are working properly.  
 
+* To run the tests, make sure jest is installed using npm.
+* Run npm run test
+```bash
+node npm run test
+```
 
 ## License
 This project is liscensed under an Apache license.

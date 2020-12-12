@@ -66,10 +66,6 @@ function addMemberPrompt() {
                     if (err) throw err;
                     console.log('The "data to append" was appended to file!');
                   });
-                /* fs.writeFile('team.html', render(employees), (err) => {
-                    if (err) throw err;
-                    console.log('The file has been created!');
-                  }); */
             }
         });
 }
