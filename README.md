@@ -66,7 +66,7 @@ Tests for this project are included in the test folder.  These tests are desigen
 * To run the tests, make sure jest is installed using npm.
 * In the command line, run 'npm run test'.
 ```bash
-node npm run test
+npm run test
 ```
 
 ## License
